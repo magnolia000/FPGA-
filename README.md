@@ -19,7 +19,7 @@ AWS Iot
 Sea-board spartan-7
 # 仓库目录
 ## Sourcecode
-GyroAWS_Demo  
+QSPI(verilog c) 
 ArduinoAWS_Demo  
 ## ExecutableFiles
 bit文件
