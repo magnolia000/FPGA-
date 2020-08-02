@@ -1,0 +1,123 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Aug  2 10:25:49 2020
+# Process ID: 13140
+# Current directory: C:/Users/81330/Desktop/FPGA/QSPI
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13292 C:\Users\81330\Desktop\FPGA\QSPI\QSPI.xpr
+# Log file: C:/Users/81330/Desktop/FPGA/QSPI/vivado.log
+# Journal file: C:/Users/81330/Desktop/FPGA/QSPI\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/81330/Desktop/FPGA/QSPI/QSPI.xpr
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/81330/Desktop/FPGA/QSPI/QSPI.srcs/sources_1/ip/rgb2dvi_1/rgb2dvi_1.xci] -no_script -reset -force -quiet
+remove_files  -fileset rgb2dvi_1 C:/Users/81330/Desktop/FPGA/QSPI/QSPI.srcs/sources_1/ip/rgb2dvi_1/rgb2dvi_1.xci
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+export_ip_user_files -of_objects  [get_files C:/Users/81330/Desktop/FPGA/Gyro_Demo_Verilog/Gyro_Demo_Verilog.srcs/sources_1/new/Driver_Gyro.v] -no_script -reset -force -quiet
+remove_files  C:/Users/81330/Desktop/FPGA/Gyro_Demo_Verilog/Gyro_Demo_Verilog.srcs/sources_1/new/Driver_Gyro.v
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+export_ip_user_files -of_objects  [get_files C:/Users/81330/Desktop/FPGA/Gyro_Demo_Verilog/Gyro_Demo_Verilog.srcs/sources_1/new/clk_division.v] -no_script -reset -force -quiet
+remove_files  C:/Users/81330/Desktop/FPGA/Gyro_Demo_Verilog/Gyro_Demo_Verilog.srcs/sources_1/new/clk_division.v
+add_files -norecurse -scan_for_includes C:/Users/81330/Desktop/FPGA/FPGA-Shake-Fighter/FPGA_Project/Clk_Division.v
+update_compile_order -fileset sources_1
+add_files -norecurse -scan_for_includes C:/Users/81330/Desktop/FPGA/FPGA-Shake-Fighter/FPGA_Project/Clk_Division.v
+export_ip_user_files -of_objects  [get_files C:/Users/81330/Desktop/FPGA/FPGA-Shake-Fighter/FPGA_Project/Driver_Gyro.v] -no_script -reset -force -quiet
+remove_files  C:/Users/81330/Desktop/FPGA/FPGA-Shake-Fighter/FPGA_Project/Driver_Gyro.v
+update_compile_order -fileset sources_1
+add_files -norecurse -scan_for_includes C:/Users/81330/Desktop/FPGA/FPGA-Shake-Fighter/FPGA_Project/Driver_Gyro.v
+update_compile_order -fileset sources_1
+add_files -norecurse -scan_for_includes C:/Users/81330/Desktop/FPGA/FPGA-Shake-Fighter/FPGA_Project/Clk_Division.v
+add_files -norecurse -scan_for_includes C:/Users/81330/Desktop/FPGA/FPGA-Shake-Fighter/FPGA_Project/Clk_Division.v
+export_ip_user_files -of_objects  [get_files C:/Users/81330/Desktop/FPGA/FPGA-Shake-Fighter/FPGA_Project/Clk_Division.v] -no_script -reset -force -quiet
+remove_files  C:/Users/81330/Desktop/FPGA/FPGA-Shake-Fighter/FPGA_Project/Clk_Division.v
+add_files -norecurse -scan_for_includes C:/Users/81330/Desktop/FPGA/FPGA-Shake-Fighter/FPGA_Project/Clk_Division.v
+update_compile_order -fileset sources_1
+report_ip_status -name ip_status 
+add_files -norecurse -scan_for_includes C:/Users/81330/Desktop/FPGA/FPGA-Shake-Fighter/FPGA_Project/Clk_Division.v
+set_property is_global_include true [get_files  C:/Users/81330/Desktop/FPGA/FPGA-Shake-Fighter/FPGA_Project/Clk_Division.v]
+set_property is_global_include false [get_files  C:/Users/81330/Desktop/FPGA/FPGA-Shake-Fighter/FPGA_Project/Clk_Division.v]
+create_fileset -blockset -define_from clk_division clk_division
+file mkdir C:/Users/81330/Desktop/FPGA/QSPI/QSPI.srcs/clk_division/new
+close [ open C:/Users/81330/Desktop/FPGA/QSPI/QSPI.srcs/clk_division/new/clk_division_ooc.xdc w ]
+add_files -fileset clk_division C:/Users/81330/Desktop/FPGA/QSPI/QSPI.srcs/clk_division/new/clk_division_ooc.xdc
+set data {# (c) Copyright 2014 Xilinx, Inc. All rights reserved.
+
+# Add in a clock definition for each input clock to the out-of-context module.
+# The module will be synthesized as top so reference the clock origin using get_ports.
+# You will need to define a clock on each input clock port, no top level clock information
+# is provided to the module when set as out-of-context.
+# Here is an example:
+# create_clock -name clk_200 -period 5 [get_ports clk]
+}
+set filename "C:/Users/81330/Desktop/FPGA/QSPI/QSPI.srcs/clk_division/new/clk_division_ooc.xdc"
+set fileId [open $filename "w"]
+puts -nonewline $fileId $data
+close $fileId
+set_property USED_IN {out_of_context synthesis implementation}  [get_files  C:/Users/81330/Desktop/FPGA/QSPI/QSPI.srcs/clk_division/new/clk_division_ooc.xdc]
+export_ip_user_files -of_objects  [get_files C:/Users/81330/Desktop/FPGA/QSPI/QSPI.srcs/clk_division/new/clk_division_ooc.xdc] -no_script -reset -force -quiet
+remove_files  -fileset clk_division C:/Users/81330/Desktop/FPGA/QSPI/QSPI.srcs/clk_division/new/clk_division_ooc.xdc
+add_files -norecurse -scan_for_includes C:/Users/81330/Desktop/FPGA/FPGA-Shake-Fighter/FPGA_Project/Clk_Division.v
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/81330/Desktop/FPGA/FPGA-Shake-Fighter/FPGA_Project/Clk_Division.v] -no_script -reset -force -quiet
+remove_files  C:/Users/81330/Desktop/FPGA/FPGA-Shake-Fighter/FPGA_Project/Clk_Division.v
+export_ip_user_files -of_objects  [get_files C:/Users/81330/Desktop/FPGA/FPGA-Shake-Fighter/FPGA_Project/Clk_Division.v] -no_script -reset -force -quiet
+remove_files  -fileset clk_division C:/Users/81330/Desktop/FPGA/FPGA-Shake-Fighter/FPGA_Project/Clk_Division.v
+export_ip_user_files -of_objects  [get_files C:/Users/81330/Desktop/FPGA/FPGA-Shake-Fighter/FPGA_Project/Clk_Division.v] -no_script -reset -force -quiet
+remove_files  -fileset clk_division C:/Users/81330/Desktop/FPGA/FPGA-Shake-Fighter/FPGA_Project/Clk_Division.v
+export_ip_user_files -of_objects  [get_files C:/Users/81330/Desktop/FPGA/FPGA-Shake-Fighter/FPGA_Project/Clk_Division.v] -no_script -reset -force -quiet
+remove_files  -fileset clk_division C:/Users/81330/Desktop/FPGA/FPGA-Shake-Fighter/FPGA_Project/Clk_Division.v
+delete_fileset [get_filesets clk_division] -merge [current_fileset]
+export_ip_user_files -of_objects  [get_files C:/Users/81330/Desktop/FPGA/FPGA-Shake-Fighter/FPGA_Project/Clk_Division.v] -no_script -reset -force -quiet
+remove_files  C:/Users/81330/Desktop/FPGA/FPGA-Shake-Fighter/FPGA_Project/Clk_Division.v
+add_files -norecurse -scan_for_includes C:/Users/81330/Desktop/FPGA/FPGA-Shake-Fighter/FPGA_Project/Clk_Division.v
+import_files -norecurse C:/Users/81330/Desktop/FPGA/FPGA-Shake-Fighter/FPGA_Project/Clk_Division.v
+update_compile_order -fileset sources_1
+update_files -from_files C:/Users/81330/Desktop/FPGA/FPGA-Shake-Fighter/FPGA_Project/Clk_Division.v -to_files C:/Users/81330/Desktop/FPGA/QSPI/QSPI.srcs/sources_1/imports/FPGA_Project/Clk_Division.v -filesets [get_filesets *]
+export_ip_user_files -of_objects  [get_files C:/Users/81330/Desktop/FPGA/QSPI/QSPI.srcs/sources_1/imports/FPGA_Project/Clk_Division.v] -no_script -reset -force -quiet
+remove_files  C:/Users/81330/Desktop/FPGA/QSPI/QSPI.srcs/sources_1/imports/FPGA_Project/Clk_Division.v
+add_files -norecurse -scan_for_includes C:/Users/81330/Desktop/FPGA/FPGA-Shake-Fighter/FPGA_Project/Clk_Division.v
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+add_files -norecurse -scan_for_includes C:/Users/81330/Desktop/FPGA/FPGA-Shake-Fighter/FPGA_Project/Clk_Division.v
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_run impl_1
+reset_run impl_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+generate_target all [get_files  C:/Users/81330/Desktop/FPGA/QSPI/QSPI.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci]
+export_ip_user_files -of_objects [get_files C:/Users/81330/Desktop/FPGA/QSPI/QSPI.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci] -no_script -sync -force -quiet
+reset_run rgb2dvi_0_synth_1
+launch_runs -jobs 6 rgb2dvi_0_synth_1
+export_simulation -of_objects [get_files C:/Users/81330/Desktop/FPGA/QSPI/QSPI.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0.xci] -directory C:/Users/81330/Desktop/FPGA/QSPI/QSPI.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/81330/Desktop/FPGA/QSPI/QSPI.ip_user_files -ipstatic_source_dir C:/Users/81330/Desktop/FPGA/QSPI/QSPI.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/81330/Desktop/FPGA/QSPI/QSPI.cache/compile_simlib/modelsim} {questa=C:/Users/81330/Desktop/FPGA/QSPI/QSPI.cache/compile_simlib/questa} {riviera=C:/Users/81330/Desktop/FPGA/QSPI/QSPI.cache/compile_simlib/riviera} {activehdl=C:/Users/81330/Desktop/FPGA/QSPI/QSPI.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+create_ip -name rgb2dvi -vendor digilentinc.com -library ip -version 1.2 -module_name rgb2dvi_1 -dir c:/Users/81330/Desktop/FPGA/QSPI/QSPI.srcs/sources_1/ip
+set_property -dict [list CONFIG.kRstActiveHigh {false} CONFIG.kClkPrimitive {PLL}] [get_ips rgb2dvi_1]
+generate_target {instantiation_template} [get_files c:/Users/81330/Desktop/FPGA/QSPI/QSPI.srcs/sources_1/ip/rgb2dvi_1_1/rgb2dvi_1.xci]
+generate_target all [get_files  c:/Users/81330/Desktop/FPGA/QSPI/QSPI.srcs/sources_1/ip/rgb2dvi_1_1/rgb2dvi_1.xci]
+update_compile_order -fileset sources_1
+create_ip -name rgb2dvi -vendor digilentinc.com -library ip -version 1.2 -module_name rgb2dvi_2 -dir c:/Users/81330/Desktop/FPGA/QSPI/QSPI.srcs/sources_1/ip
+generate_target {instantiation_template} [get_files c:/Users/81330/Desktop/FPGA/QSPI/QSPI.srcs/sources_1/ip/rgb2dvi_2/rgb2dvi_2.xci]
+update_compile_order -fileset sources_1
+generate_target all [get_files  c:/Users/81330/Desktop/FPGA/QSPI/QSPI.srcs/sources_1/ip/rgb2dvi_2/rgb2dvi_2.xci]
