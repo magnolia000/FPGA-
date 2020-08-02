@@ -1,7 +1,7 @@
 # FPGA-Shake Fighter
 # 该项目为2020年新工科联盟-Xilinx暑期学校（Summer School）项目。
 # 项目成员
-刘学谦
+刘学谦  
 余杭霖
 # 项目介绍
 这是利用FPGA开发板开发的简易摇摇乐：读取板载陀螺仪的数据通过qspi从FPGA传到ESP32，在Arduino端读取出陀螺仪加速度数据并进行数据处理判断摇动次数.  
@@ -19,7 +19,7 @@ AWS Iot
 Sea-board spartan-7
 # 仓库目录
 ## Sourcecode
-QSPI(verilog c) 
+QSPI(verilog)   
 ArduinoAWS_Demo  
 ## ExecutableFiles
 bit文件
