@@ -18,11 +18,11 @@ AWS Iot
 # 板卡型号
 Sea-board spartan-7
 # 仓库目录
-## code
+## Sourcecode
 GyroAWS_Demo  
 ArduinoAWS_Demo  
-## vivadofile
+## ExecutableFiles
 bit文件
-## image
+## images
 项目演示图片和视频
 
