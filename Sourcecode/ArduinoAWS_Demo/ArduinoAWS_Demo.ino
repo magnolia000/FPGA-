@@ -150,9 +150,9 @@ void loop()
    //data00= Wavecount.Wave(2);
    //SeaTrans.read(0, data11, 2);
    if(countx>20)
-    { sprintf(payload," 5S内摇了%d次,速度真快!",countx);}
+    { sprintf(payload,"10S内摇了%d次,速度真快!",countx);}
    else
-   {sprintf(payload," 5S内摇了%d次,继续加油鸭",countx);}
+   {sprintf(payload,"10S内摇了%d次,继续加油鸭",countx);}
     
     //Serial.println(payload);
   
