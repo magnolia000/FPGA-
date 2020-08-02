@@ -25,4 +25,6 @@ ArduinoAWS_Demo
 bit文件
 ## images
 项目演示图片和视频
+# 更新
+想要在基础功能上扩展功能，当摇动了一定次数后会通过HDMI显示一张图片（采用HDMI_Demo）,仅修改了代码和生成bit文件，还未使用MIN-HDMI线调试功能。
 
