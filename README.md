@@ -19,10 +19,10 @@ AWS Iot
 Sea-board spartan-7
 # 仓库目录
 ## Sourcecode
-QSPI(verilog)   
-ArduinoAWS_Demo  
+QSPI(verilog语言，vivado工程)   
+ArduinoAWS_Demo（Arduino文件）  
 ## ExecutableFiles
-bit文件
+bit文件：其中Gyro_Demo(2.0)为预想扩展功能后修改了代码生成的bit文件，还未上板测试扩展功能。
 ## images
 项目演示图片和视频
 # 更新
