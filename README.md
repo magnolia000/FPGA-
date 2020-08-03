@@ -19,12 +19,12 @@ AWS Iot
 Sea-board spartan-7
 # 仓库目录
 ## Sourcecode
-QSPI(verilog)   
-ArduinoAWS_Demo  
+QSPI(verilog语言，vivado工程)   
+ArduinoAWS_Demo（Arduino文件）  
 ## ExecutableFiles
-bit文件
+bit文件：其中Gyro_Demo(2.0)为预想扩展功能后修改了代码生成的bit文件，还未上板测试扩展功能。
 ## images
 项目演示图片和视频
 # 更新
-想要在基础功能上扩展功能，当摇动了一定次数后会通过HDMI显示一张图片（采用HDMI_Demo）,仅修改了代码和生成bit文件，还未使用MIN-HDMI线调试功能。
+想要在基础功能上扩展功能，当摇动了一定次数后会通过HDMI显示一张图片（采用HDMI_Demo）,仅修改了代码和生成bit文件，还未使用MIN-HDMI线上板测试功能。
 
