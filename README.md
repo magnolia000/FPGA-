@@ -23,7 +23,7 @@ QSPI(verilog语言，vivado工程)
 ArduinoAWS_Demo（Arduino文件）  
 ## ExecutableFiles
 bit文件：其中Gyro_Demo(2.0)为预想扩展功能后修改了代码生成的bit文件，还未上板测试扩展功能。  
-测试摇摇乐基础功能请使用Gyro_Demo。
+测试摇摇乐基础功能请使用![Gyro_Demo](https://github.com/magnolia000/FPGA-Shake-Fighter/blob/master/ExecutableFiles/Gyro_Demo.bit)
 ## images
 项目演示图片和视频
 ### 演示视频
