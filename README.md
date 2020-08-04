@@ -27,6 +27,6 @@ bit文件：其中Gyro_Demo(2.0)为预想扩展功能后修改了代码生成的
 ## images
 项目演示图片和视频
 ### 演示视频
-<video id="video" controls="" preload="none"> 演示视频<source id="mp4" src="images/演示视频.mp4" type="video/mp4"></video>
+![演示视频]()
 # 更新
 想要在基础功能上扩展功能，当摇动了一定次数后会通过HDMI显示一张图片（采用HDMI_Demo）,仅修改了代码和生成bit文件，还未使用MIN-HDMI线上板测试功能。该扩展功能暂时放弃，等以后有时间精力后再来测试完善该扩展功能。ExecutableFiles文件内的Gyro_Demo(2.0)文件是测试bit文件，不建议使用。
